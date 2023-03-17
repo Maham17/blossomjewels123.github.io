@@ -17,11 +17,7 @@
   <title>Blossom Jewels</title>
 </head>
 <style>
-  .first {
-  
 
-
-  }
 
   .logo {
     width: 80%;
@@ -59,7 +55,7 @@
 
   .box2 {
     background-color: #eed4d691;
-
+ 
   }
 
   .bj {
@@ -86,6 +82,16 @@
   .ft{
     background-color: #576371;
   }
+  @media screen and (max-width: 350px){
+    .box1{
+      display: none;
+    }
+    .carousel-item img {
+    width: 100%;
+    
+  }
+ 
+  }
   
 </style>
 
@@ -97,20 +103,20 @@
         <a class="nav-link active" aria-current="page" href="#">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">PRODUCTS</a>
+        <a class="nav-link" href="#product">PRODUCTS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">GALLERY
+        <a class="nav-link" href="#gal">GALLERY
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT</a>
+        <a class="nav-link" href="#abt">ABOUT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
+        <a class="nav-link" href="#cu">CONTACT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">FAQ</a>
+        <a class="nav-link" href="#fq">FAQ</a>
       </li>
       <div class="icons ">
         <i class="fa-brands fa-instagram"></i>
@@ -123,7 +129,7 @@
     </ul>
     <div class="container box2">
       <p class="text-center bj "><strong>BLOSSOM JEWELS BY MK</strong></p>
-      <div id="carouselExampleCaptions" class="carousel slide w-90 pic-sld border  m-auto" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide w-90 pic-sld border m-auto galbox" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -169,7 +175,8 @@
         </button>
       </div>
       <p class="text-center pr mt-3"><strong>GALLERY</strong> </p>
-      <div class="row">
+      <div class="row" id="gal">
+      
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
           <img src="./Blossom Jewels/IMG_20221225_211522_304.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
@@ -191,7 +198,7 @@
         </div>
       </div>
       <p class="text-center pr"><strong>PRODUCTS</strong></p>
-      <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="product">
         <div class="col">
           <div class="card h-100">
             <img src="./Blossom Jewels/IMG_20221218_210428_167.jpg" class="card-img-top" alt="...">
@@ -251,7 +258,7 @@
       </div>
      
       
-      <div class="ab">
+      <div class="ab" id="abt">
         <p class="text-center pr mt-3"><strong>ABOUT</strong> </p>
         <p class="text-center about">We are a women led small business that strives to serves you with the best possible
           accessories and self care regime. <br>
@@ -261,7 +268,7 @@
 
 
       <p class="text-center pr mt-3"><strong>CONTACT US</strong></p>
-      <form action="/action_page.php">
+      <form action="/action_page.php" id="cu">
         <div class="mb-3 mt-3">
           <label for="email" class="form-label">Email:</label>
           <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
@@ -275,9 +282,9 @@
 
         <button type="submit" class="btn btn-primary mt-3">Submit</button>
       </form>
-      <p class="text-center pr mt-3"><strong>FAQ</strong> </p>
+      <p id="fq" class="text-center pr mt-3"><strong>FAQ</strong> </p>
 
-      <div class="accordion pb-4" id="accordionExample">
+      <div class="accordion pb-4" id="accordionExample " >
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
